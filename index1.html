@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday Treasure Hunt 🎁</title>
+
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <div class="hearts">♥ ♥ ♥</div>
+
+    <main class="card">
+
+        <!-- WELCOME PAGE -->
+        <section id="welcome" class="screen">
+
+            <div class="emoji">🎂</div>
+
+            <h1>Birthday Treasure Hunt</h1>
+
+            <p>
+                Your birthday surprise isn't going to be handed to you...
+            </p>
+
+            <p>
+                <strong>You have to find it! 😏</strong>
+            </p>
+
+            <button onclick="startHunt()">
+                START THE HUNT 🔎
+            </button>
+
+        </section>
+
+
+        <!-- TREASURE HUNT -->
+        <section id="hunt" class="screen hidden">
+
+            <div class="progress" id="progress">
+                Clue 1 of 6
+            </div>
+
+            <div class="emoji" id="clueEmoji">
+                🤏
+            </div>
+
+            <h2 id="clueTitle">
+                Clue 1
+            </h2>
+
+            <p id="question"></p>
+
+            <input
+                id="answer"
+                type="text"
+                placeholder="Type your answer..."
+                autocomplete="off"
+            >
+
+            <br>
+
+            <button onclick="checkAnswer()">
+                SUBMIT ❤️
+            </button>
+
+            <p id="result"></p>
+
+        </section>
+
+
+        <!-- FINAL SURPRISE -->
+        <section id="treasure" class="screen hidden">
+
+            <div class="confetti">
+                🎉 🎈 🎂 🎈 🎉
+            </div>
+
+            <h1>
+                YOU FOUND THE TREASURE! 🎁
+            </h1>
+
+            <p>
+                Six clues. Six memories.
+                And one very special birthday. ❤️
+            </p>
+
+            <div class="gift">
+                🎁
+            </div>
+
+            <h2>
+                Happy Birthday! 🥳
+            </h2>
+
+            <p class="final-message">
+                Some memories may look small to everyone else,
+                but they become precious when they belong to us.
+                Here's to many more moments, meals, laughs and
+                memories together. ❤️
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="script1.js"></script>
+
+</body>
+</html>
